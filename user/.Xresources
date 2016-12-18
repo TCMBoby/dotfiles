@@ -1,0 +1,59 @@
+rofi.opacity: 93
+rofi.lines: 10
+rofi.font: Sans 13
+rofi.bw: 0
+rofi.padding: 300
+rofi.separator-style: none
+rofi.hide-scrollbar: true
+rofi.fullscreen: true
+
+!state			bg,		fg,		bgalt,		hlbg,		hlfg
+rofi.color-normal:	#3b3b3b,	#dedede,	#3b3b3b,	#3b3b3b,	#ff8800
+rofi.color-urgent:	#ff8800,	#dedede,	#3b3b3b,	#ff8800,	#dedede
+rofi.color-active:	#3b3b3b,	#dedede,	#3b3b3b,	#3b3b3b,	#ff8800
+
+!			background	border
+rofi.color-window:	#3b3b3b,	#3b3b3b
+
+!start xterm with unicode support
+xterm*utf8: 1
+
+xterm*faceName: Input Mono
+xterm*renderFont: true
+xterm*faceSize: 15.0
+
+xterm*internalBorder: 5
+
+!xterm colors
+xterm*background:	rgb:3b/3b/3b
+xterm*foreground:	rgb:de/de/de
+xterm*borderColor:	rgb:3b/3b/3b
+xterm*cursorColor:  rgb:de/de/de
+
+!DarkGrey
+xterm*color0:		rgb:3b/3b/3b
+xterm*color8:       rgb:66/66/66
+!Red
+xterm*color1:		rgb:c0/47/4a
+xterm*color9:       rgb:ef/81/71
+!Green
+xterm*color2:		rgb:9c/bb/55
+xterm*color10:      rgb:e5/f7/79
+!Yellow
+xterm*color3:		rgb:c8/c0/4a
+xterm*color11:      rgb:ff/f7/96
+!Blue
+xterm*color4:		rgb:7a/7a/b0
+xterm*color12:      rgb:41/86/be
+!Magenta
+xterm*color5:		rgb:b3/34/5d
+xterm*color13:      rgb:ef/9e/be
+!Cyan
+xterm*color6:		rgb:41/81/79
+xterm*color14:      rgb:71/be/be
+!LighGrey
+xterm*color7:		rgb:ab/ab/ab
+xterm*color15:		rgb:de/de/de
+
+xterm*SaveLines: 9000
+

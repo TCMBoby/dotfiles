@@ -1,0 +1,3 @@
+#!/bin/bash
+stringZ="$(pactl list sinks | grep "Volume: f" | cut -d "/" -f2 | tail -c 6 | head -c 3)"
+echo ${stringZ//" "/"0"}

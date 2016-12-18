@@ -1,0 +1,2 @@
+#/bin/bash!
+feh --cycle-once | pwd

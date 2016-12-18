@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ -d "/run/media/tobi/data" ]; then
+    udisksctl unmount -b /dev/sdc1
+else
+    udisksctl mount -b /dev/sdc1
+fi

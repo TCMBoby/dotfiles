@@ -1,0 +1,12 @@
+[Unit]
+Description="Automount usb device"
+
+[Service]
+Type=simple
+User=tobi
+ExecStart=/home/tobi/bin/automount
+WorkingDirectory=/home/tobi/bin
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

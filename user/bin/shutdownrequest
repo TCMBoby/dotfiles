@@ -1,0 +1,40 @@
+#!/bin/bash
+
+case $1 in
+    -h)
+        echo "shutdownrequest help page"
+        echo "Prompts the user to shut down, reboot or log out of i3. The choice between those three options can be made via parameter."
+        echo "Parameters:"
+        echo "-s: Prompts the user to shut down."
+        echo "-r: Prompts the user to reboot."
+        echo "-l: Prompts the user to log out of i3."
+        echo "These parameters are mutually exclusive."
+        exit ;;
+    -s)
+        echo "Do you really want to shut down?" ;;
+    -r)
+        echo "Do you really want to reboot?" ;;
+    -l)
+        echo "Do you really want to log out?" ;;
+    *)
+        echo "Invalid parameter. See -h for help."
+        exit ;;
+esac
+
+select c in "Yes" "No"; do
+    case $c in
+        Yes)
+            case $1 in
+                -s)
+                    shutdown now ;;
+                -r)
+                    reboot ;;
+                -l)
+                    i3-msg exit ;;
+                esac
+            exit ;;
+        No)
+            echo "canceled"
+            exit ;;
+    esac
+done

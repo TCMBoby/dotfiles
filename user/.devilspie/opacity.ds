@@ -1,0 +1,10 @@
+( if
+( or
+( contains ( window_class ) "Gvim" )
+( contains ( window_class ) "XTerm" )
+( contains ( window_class ) "htop" )
+)
+( begin
+( spawn_async (str "transset-df -i " (window_xid) " 0.85" ))
+)
+)
